@@ -1,0 +1,402 @@
+body{
+    overflow-x: hidden;
+}
+.MainBody{
+    height: 100vh;
+}
+.LeftSection{
+    height: 100%;
+    position: fixed;
+    background-color: black;
+}
+.HomeSection{
+    height: fit-content;
+    width: 78%;
+    margin-left: 20%;
+}
+#ContentMain{
+    height: 100%;
+    padding: 3%;
+    box-shadow: 2px 9px 16px lightgray;
+    border-radius: 5%;
+}
+.LogoDiv{
+    height: 30%;
+}
+.LogoDiv img{
+    width: 50%;
+    height: 100%;
+    margin-left: 25%;
+}
+.LeftSectionBtnPack{
+    margin-top: 5%;
+}
+.LeftSectionBtnPack button{
+    display: block;
+    width: 96%;
+    margin-left: 3%;
+    background-color: inherit;
+    border: none;
+    font-size: 25px;
+    color: white;
+    opacity: 25%;
+    margin-bottom: 15%;
+    text-align: left;
+    transition: opacity 0.1s ease-in-out ;
+}
+.LeftSectionBtnPack button:after{
+    margin-left: 5%;
+}
+.LeftSectionBtnPack button:hover{
+    opacity: unset;
+}
+#HomeBtn::after{
+    content: "Home";
+}
+#EducationBtn::after{
+    content: "Education";
+}
+#ContactBtn::after{
+    content: "Contact";
+}
+#TermsAndServicesBtn::after{
+    content: "Terms & services";
+    font-size: 19px;
+}
+.PicDiv{
+    margin-top: 2%;
+    margin-left: 25%;
+    width: 50%;
+    height: 250px;
+}
+.PicDiv img{
+    width: 50%;
+    margin-left: 25%;
+    height: 100%;
+    border-radius: 50%;
+}
+.PicDiv p{
+    margin-top: 5%;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'UnifrakturMaguntia', cursive;
+    color: goldenrod;
+}
+.StatsDiv{
+    margin-top: 9%;
+    height: 500px;
+}
+.About p{
+    font-size: 25px;
+    font-weight: 1;
+    color: #3d4031;
+    margin-bottom: 8%;
+    margin-left: 2%;
+}
+.About i{
+    font-size: 30px;
+    color: #1f3c1f;
+}
+#HeaderP{
+    font-size: 40px;
+    font-weight: 1;
+}
+#HeaderP i{
+    font-size: 40px;
+    color: goldenrod;
+}
+.StatBar{
+    height: 100px;
+}
+.StatName{
+    color: black;
+    font-size: 25px;
+}
+.FaBar{
+    width: 100%;
+    height: 35px;
+    border-radius: 30px;
+    background-color: #352e2e;
+}
+.SoBar{
+    width: 70%;
+    height: 100%;
+    border-radius: inherit;
+    background-color: #81808033;
+}
+.StatNum{
+    text-align: center;
+    font-size: 22px;
+    color: snow;
+}
+#SkillOne .SoBar{
+    width: 92%;
+}
+#SkillThree .SoBar{
+    width: 20%;
+}
+#HomeBtn{
+    opacity: 75%;
+}
+#HomeBtn:hover{
+    opacity: 100%;
+}
+.langSkills #HeaderP{
+    text-align: center;
+}
+.langSkills #HeaderP::after{
+    margin-left: 1%;
+    content: "Languages";
+}
+#ContentEducation{
+    margin-top: 3%;
+    margin-bottom: 5%;
+    padding: 3%;
+    height: fit-content;
+    box-shadow: 2px 9px 16px lightgray;
+    border-radius: 5%;
+    display: block;
+}
+.HeaderP{
+    color: black;
+    outline: none;
+    text-align: center;
+}
+.HeaderP:hover{
+    outline-offset: 2%;
+    outline: 3px solid black;
+}
+#GDCAPIcon{
+    margin-left: 45%;
+    font-size: 60px;  
+    opacity: 100%;
+    transition: color 0.3s ease-in-out;
+}
+#GDCAPIcon:hover{
+    color: orangered;
+}
+#GDCAPIcon::before{
+    background-color: inherit;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    outline: 1px solid black;
+    outline-offset: 15px;
+    animation: GDCAPIconAn 3s alternate;
+    animation-name: GDCAPIconAn;
+    animation-duration: 900ms;
+    animation-iteration-count: infinite;
+}
+@keyframes  GDCAPIconAn{
+    0%{
+        outline: 0px solid black;
+        outline-offset: 15px;
+        opacity: 25%;
+    }
+    100%{
+        outline: 8px solid orange;
+        outline-offset: 25px;
+        opacity: 90%;
+    }
+}
+.BtnPackNavEducationContent{
+    margin-top: 9%;
+}
+.BtnPackNavEducationContent button{
+    width: 32.5%;
+    border: none;
+    background-color: inherit;
+    border-bottom: 2px solid black;
+    padding: 1%;
+    transition: border-color 0.2s ease-in-out;
+}
+.BtnPackNavEducationContent button:hover{
+    border-color: orangered;
+    color: orangered;
+}
+#BackGroudBtn{
+    border-color: orangered;
+    color: orangered;
+}
+.AboutContent{
+    margin-top: 5%;
+}
+.HeaderPContent{
+    font-size: 40px;
+}
+.HeaderPContent::after{
+    content: "";
+    display: block;
+    width: 9%;
+    height: 2px;
+    margin-left: 1.5%;
+    background-color: black;
+    animation: 3s alternate;
+    animation-name: HeaderPContentAnAfter;
+    animation-iteration-count: infinite;
+}
+@keyframes HeaderPContentAnAfter {
+    50%{
+        background-color: orange;
+    }
+    100%{
+        background-color: orangered;
+    }
+}
+.DegreesPContent{
+    color: #383f42;
+    font-size: 20px;
+}
+.DegreesPContent::before{
+    content: "-Degrees:" ;
+    font-size: 23px ;
+    color: black;
+    margin-right: 3%;
+}
+.institutionsPContent{
+    color: #383f42;
+    font-size: 20px;
+}
+.institutionsPContent::before{
+    content: "-Institutions:" ;
+    font-size: 23px ;
+    color: black;
+    margin-right: 3%;
+}
+.ProfessionalAffiliationsContent .HeaderPContent::after{
+    width: 15%;
+}
+#ContentWorkHistory{
+    display: none;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    padding: 2%;
+    height: 450px;
+    box-shadow: 2px 9px 16px lightgray;
+    border-radius: 5%;
+}
+#Projects{
+    display: none;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    padding: 3%;
+    height: fit-content;
+    box-shadow: 2px 9px 16px lightgray;
+    border-radius: 5%;
+}
+.Job{
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+.Job button{
+    border: none;
+    background-color: inherit;
+    color: black;
+    font-size: 19px;
+    transition: color 0.2s ease-out;
+}
+.Job button:hover{
+    color: #352e2e;
+}
+.Job button::after{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 1px;
+    background-color: rgb(49, 48, 49);
+    transition: width 0.2s ease-out;
+}
+.Job button:hover::after{
+    width: 100%;
+}
+#ContactDiv{
+    display: block;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    padding: 3%;
+    height: fit-content;
+    box-shadow: 2px 9px 16px lightgray;
+    border-radius: 5%;
+}
+#CommentEffected{
+    margin-left: 45%;
+    font-size: 60px;  
+    opacity: 100%;
+    text-shadow: 8px 8px 4px lightgray;
+    transition: color 0.3s ease-in-out;
+}
+#CommentEffected:hover{
+    color: lightblue;
+}
+.EmailNameInputSpan{
+    width: 100%;
+}
+.EmailNameInputSpan input{
+    margin-top: 5%;
+    width: 45%;
+    font-size: 20px;
+    border: none;
+    padding: 1%;
+    border-bottom: 2px solid gray;
+    background-color: whitesmoke;
+    color: gray;
+    outline: none;
+}
+#NameInput{
+    margin-left: 2.5%;
+}
+.SubjectSpan{
+    width: 100%;
+}
+.SubjectSpan input{
+    margin-top: 1%;
+    margin-left: 1%;
+    width: 95%;
+    font-size: 20px;
+    border: none;
+    padding: 1%;
+    border-bottom: 2px solid gray;
+    background-color: whitesmoke;
+    color: gray;
+    outline: none;
+}
+.MessageSpan{
+    width: 100%;
+}
+.MessageSpan textarea{
+    margin-top: 1%;
+    margin-left: 1%;
+    width: 95%;
+    height: 200px;
+    font-size: 20px;
+    border: none;
+    padding: 1%;
+    border-bottom: 2px solid gray;
+    background-color: whitesmoke;
+    color: gray;
+    outline: none;
+}
+#SendBtn{
+    display: block;
+    margin-left: 40%;
+    width: 15%;
+    background-color: lightblue;
+    border: none;
+    padding: 1%;
+    margin-top: 1%;
+    border-radius: 25px;
+    transition: background-color 0.2s ease-in-out;
+}
+#SendBtn:hover{
+    color: rgb(24, 23, 23);
+    background-color: rgb(135, 189, 207);
+}
+@media (max-width: 850px) {
+    .LeftSection{
+        display: none;
+    }    
+    .HomeSection{
+        margin-left: unset;
+        width: 100%;
+    }
+}
